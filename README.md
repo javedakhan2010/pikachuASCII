@@ -4,6 +4,8 @@
 
 A photorealistic 3D cinematic transformation of Pikachu emerging dynamically from its Pokéball into high-definition, high-contrast ASCII art. Built with bold **22pt Consolas typography**, **15x22 pixel cells**, vibrant Poké-yellow color grading, crackling 240,000V electric arcs, multi-pass optical phosphor bloom, synchronized stereo audio, and real-time **Javed Khan Labs** telemetry.
 
+🌐 **Live GitHub Pages Web Showcase**: [https://javedakhan2010.github.io/pikachuASCII/](https://javedakhan2010.github.io/pikachuASCII/)
+
 ![Pikachu Cinematic Preview](preview.webp)
 
 ---
@@ -126,6 +128,25 @@ mux_audio    = ffmpeg_mux(composite, audio_stream='aac')
 ```text
 [ JAVED KHAN LABS * PIKACHU CINEMATIC * T+05.00s / 10.04s * 25 FPS ]
 ```
+
+---
+
+## 📱 Featured Product: pennyBook Ledger (Android)
+
+> *"Take control of your money. Keep your records private."*
+
+**pennyBook Ledger** is an offline-first personal finance manager for Android designed by **Javed Khan Labs**.
+
+- 🔒 **100% Offline & Private**: No cloud sync required, no mandatory account, and zero advertising trackers.
+- 🏷️ **Custom Tags & Net Cashflow**: Multi-label tagging (`#Vacation`, `#Work`, `#Groceries`) with real-time financial analytics.
+- 📊 **Category Budgets**: Proactive visual alerts (amber warning at 80%, red on overspend) and automatic rollover.
+- 🤝 **Udhaar & Bank EMI Khata**: Dual-direction debt ledger with partial repayments & recurring bank EMI alarms.
+- 📈 **Dedicated Investment Portfolio**: Mutual funds, stocks, and digital gold tracked in an isolated portfolio.
+- 📁 **Excel (.xlsx) & PDF Reports**: Clean, itemized statements and spreadsheet import with pre-commit validation.
+
+### 📥 Download pennyBook Ledger
+- **Google Play Store**: [Get it on Google Play](https://play.google.com/store/apps/details?id=com.pennybook.expensetracker)
+- **Official Website**: [https://www.javedkhanlabs.in/products/pennybook/](https://www.javedkhanlabs.in/products/pennybook/)
 
 ---
 

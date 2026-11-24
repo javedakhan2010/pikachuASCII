@@ -3,42 +3,289 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cinematic 3D ASCII Pikachu emergence from Pokéball with electric discharge and live telemetry by Javed Khan Labs.">
-  <title>Pikachu Cinematic Emergence | ASCII Lab · Javed Khan Labs</title>
+  <meta name="description" content="Cinematic 3D ASCII Pikachu emergence from Pokéball with synchronized audio and live telemetry by Javed Khan Labs. Download pennyBook Ledger for Android.">
+  <meta name="keywords" content="Pikachu, ASCII art, 3D Pikachu, Javed Khan Labs, pennyBook Ledger, expense tracker, Android">
+  <title>Pikachu 3D Cinematic ASCII | Javed Khan Labs & pennyBook Ledger</title>
+  <link rel="icon" type="image/png" href="pennybook_icon.png">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <main class="shell">
-    <article class="scene scene--source">
-      <img src="preview.webp" width="540" height="960" alt="Cinematic 3D ASCII Pikachu emerging from Pokéball with electric arcs by Javed Khan Labs">
-      <div class="scene-copy">
-        <span class="number">04</span>
-        <h1>Pikachu (Cinematic Emergence)</h1>
-        <p>A photorealistic 3D cinematic transformation of Pikachu emerging from its Pokéball. Features dramatic red-core lighting, crackling 240,000V electric arcs, saturated Poké-yellow volumetric shading, anamorphic optical streaks, synchronized master audio, and real-time Javed Khan Labs telemetry.</p>
-        <div class="scene-cards">
-          <div class="scene-card">
-            <span class="scene-card-header"><span class="filename">cinematic.py</span><strong>Neural ASCII Shader Pipeline</strong></span>
-            <pre><code># Cinematic 3D Pikachu ASCII Lab Neural Shader Pipeline
-frame_src    = decode_stream(frame_idx);  crop = center_crop(1080, 1496)
-lum_field    = rgb_to_luminance(frame_src);  sobel = gradient_tensor(lum_field)
-ascii_grid   = map_ascii_density(lum_field, RAMP='  ..:-=+*oa#%8@$', edges=sobel)
-bloom_pass   = optical_glow(near=0.45, far=0.35, anamorphic_streak=70)  # 240kV
-composite    = render_atlas(ascii_grid, font='Consolas 22pt')  # Javed Khan Labs</code></pre>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="#" class="brand">
+        <span class="brand-dot"></span>
+        <span>JAVED KHAN LABS</span>
+        <span class="brand-badge">Scene 04</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#video-reel" class="nav-link">3D ASCII Reel</a>
+        <a href="#pipeline" class="nav-link">Shader Pipeline</a>
+        <a href="#pennybook" class="nav-link" style="color: #34d399; font-weight: 600;">pennyBook Ledger</a>
+        <a href="https://github.com/javedakhan2010/pikachuASCII" target="_blank" rel="noopener noreferrer" class="nav-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="video-reel">
+      <div class="container hero-grid">
+        
+        <!-- Left Content -->
+        <div>
+          <div class="hero-pill">
+            <span>⚡</span>
+            <span>POKÉMON #025 · 3D CINEMATIC ASCII EMERGENCE</span>
           </div>
-          <div class="scene-card">
-            <span class="scene-card-header"><span>Watermark &amp; Branding</span><strong>Javed Khan Labs Signature</strong></span>
-            <pre><code>+------------------------------------+
-|         JAVED KHAN LABS            |
-|   04 : PIKACHU CINEMATIC LAB       |
-+------------------------------------+</code></pre>
+          
+          <h1 class="hero-title">Pikachu in Photorealistic 3D ASCII</h1>
+          
+          <p class="hero-lead">
+            Experience the legendary Electric-type Pokémon emerging dynamically from its Pokéball in a high-tech laboratory. Rendered with bold <strong>22pt Consolas typography</strong>, <strong>15x22 pixel cells</strong>, 240,000V crackling lightning discharge, multi-pass optical phosphor bloom, and synchronized stereo audio.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-val">25 FPS</div>
+              <div class="stat-lbl">Master Frame Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">240,000V</div>
+              <div class="stat-lbl">Peak Arc Discharge</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">1080 × 1920</div>
+              <div class="stat-lbl">Vertical Reel Resolution</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">STEREO AAC</div>
+              <div class="stat-lbl">Synchronized Audio</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn-primary" id="btn-unmute" onclick="toggleAudio()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9.77l-4.5-4h-4v6h4l4.5 4v-6zm5-1c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+              </svg>
+              <span id="unmute-text">Unmute Master Audio</span>
+            </button>
+            <a href="#pennybook" class="btn-emerald">
+              <span>📱 Get pennyBook Ledger</span>
+            </a>
+            <a href="https://github.com/javedakhan2010/pikachuASCII" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>View Source</span>
+            </a>
           </div>
         </div>
-        <nav class="actions" aria-label="Scene links">
-          <a href="README.md">How to run</a>
-          <a href="scene.mp4">Watch master MP4 with audio</a>
-        </nav>
+
+        <!-- Right Video Player -->
+        <div>
+          <div class="video-wrapper">
+            <div class="video-overlay-badge">◈ JAVED KHAN LABS</div>
+            <video id="pikachu-video" autoplay loop muted playsinline poster="preview.webp">
+              <source src="scene.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-audio-badge" onclick="toggleAudio()">
+              <span id="badge-icon">🔇</span>
+              <span id="badge-text">Tap to Unmute</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </article>
+    </section>
+
+    <!-- Shader Pipeline Breakdown -->
+    <section class="section" id="pipeline">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">Architecture &amp; Kinematics</span>
+          <h2 class="section-title">The Neural ASCII Shader Pipeline</h2>
+          <p class="section-desc">Transforming photorealistic 3D light streams into crisp, expressive ASCII glyphs while preserving volumetric depth and dynamic lightning energy.</p>
+        </div>
+
+        <div class="pipeline-cards">
+          <div class="card">
+            <div class="card-num">01 / STREAM</div>
+            <h3>Video Decoding &amp; Framing</h3>
+            <p>Pipes 720x1280 3D animation into a center-cropped 1080x1496 viewport, removing corner artifacts while perfectly framing Pikachu and the Pokéball.</p>
+          </div>
+          <div class="card">
+            <div class="card-num">02 / TENSORS</div>
+            <h3>Sobel Gradient &amp; Luminance</h3>
+            <p>Calculates cell-level directional edge gradients and luminance mapping to identify Pikachu's silhouette, eye glints, and ear boundaries.</p>
+          </div>
+          <div class="card">
+            <div class="card-num">03 / GLYPHS</div>
+            <h3>Electric Discharge Arc Detection</h3>
+            <p>High-energy lightning sparks dynamically trigger high-density symbols (<code>*</code>, <code>+</code>, <code>x</code>, <code>~</code>, <code>#</code>) with saturated electric gold.</p>
+          </div>
+          <div class="card">
+            <div class="card-num">04 / OPTICS</div>
+            <h3>Phosphor Bloom &amp; Streaks</h3>
+            <p>Dual-stage Gaussian optical convolution (<code>near=0.45</code>, <code>far=0.35</code>) combined with 70px vertical anamorphic phosphor flares.</p>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="comment"># Cinematic 3D Pikachu ASCII Lab Neural Shader Pipeline (Javed Khan Labs)</div>
+          <div><span class="keyword">frame_src</span>    = decode_stream(frame_idx);  crop = center_crop(1080, 1496)</div>
+          <div><span class="keyword">lum_field</span>    = rgb_to_luminance(frame_src);  sobel = gradient_tensor(lum_field)</div>
+          <div><span class="keyword">ascii_grid</span>   = map_ascii_density(lum_field, RAMP=<span class="comment">'  ..:-=+*oa#%8@$'</span>, edges=sobel)</div>
+          <div><span class="keyword">bloom_pass</span>   = optical_glow(near=0.45, far=0.35, anamorphic_streak=70)  <span class="comment"># 240,000V</span></div>
+          <div><span class="keyword">composite</span>    = render_atlas(ascii_grid, font=<span class="comment">'Consolas 22pt'</span>)  <span class="comment"># Javed Khan Labs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         PROMOTION SECTION: pennyBook Ledger
+         ======================================================= -->
+    <section class="promo-section" id="pennybook">
+      <div class="container promo-container">
+
+        <!-- Left Promo Copy & Actions -->
+        <div>
+          <div class="promo-tag">
+            <span>🛡️</span>
+            <span>FEATURED PRODUCT FROM JAVED KHAN LABS</span>
+          </div>
+
+          <div class="promo-app-header">
+            <img src="pennybook_icon.png" alt="pennyBook Ledger App Icon" class="app-icon">
+            <div>
+              <h2 class="promo-title">pennyBook <span>Ledger</span></h2>
+              <p class="promo-tagline">"Take control of your money. Keep your records private."</p>
+            </div>
+          </div>
+
+          <p class="promo-lead">
+            The offline-first personal finance app for Android. Track income, expenses, custom tags (<code>#Trip</code>, <code>#Work</code>), category budgets with amber alerts, investments, and Udhaar/EMI debt ledgers — with <strong>zero advertising trackers</strong>, <strong>no mandatory account</strong>, and <strong>AES-256 encrypted local storage</strong>.
+          </p>
+
+          <div class="promo-features">
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">🔒</span>
+              <div class="promo-feat-text">
+                <strong>100% Offline &amp; Private</strong>
+                <span>Data stays on your device. No cloud storage.</span>
+              </div>
+            </div>
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">🏷️</span>
+              <div class="promo-feat-text">
+                <strong>Custom Tags &amp; Cashflow</strong>
+                <span>Multi-label events (#Vacation, #Work) with net analytics.</span>
+              </div>
+            </div>
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">📊</span>
+              <div class="promo-feat-text">
+                <strong>Category Budgets</strong>
+                <span>Visual progress bars &amp; alerts before overspending.</span>
+              </div>
+            </div>
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">🤝</span>
+              <div class="promo-feat-text">
+                <strong>Udhaar &amp; Bank EMI Khata</strong>
+                <span>Track payables, receivables, and recurring EMI alarms.</span>
+              </div>
+            </div>
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">📈</span>
+              <div class="promo-feat-text">
+                <strong>Dedicated Investment Portfolio</strong>
+                <span>Mutual funds &amp; stocks isolated from daily expenses.</span>
+              </div>
+            </div>
+            <div class="promo-feat-item">
+              <span class="promo-feat-icon">📁</span>
+              <div class="promo-feat-text">
+                <strong>Excel (.xlsx) &amp; PDF Exports</strong>
+                <span>Generate itemized statements &amp; CSV import with validation.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Action Buttons -->
+          <div class="promo-cta-box">
+            <!-- Google Play Store Button -->
+            <a href="https://play.google.com/store/apps/details?id=com.pennybook.expensetracker" target="_blank" rel="noopener noreferrer" class="btn-playstore">
+              <svg class="playstore-icon" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M3.6 2.3l10.2 10.2-10.2 10.2c-.3-.3-.6-.7-.6-1.2V3.5c0-.5.3-.9.6-1.2z"/>
+                <path fill="#FBBC04" d="M17.1 15.8L4.8 22.8c.4.3.9.3 1.4 0l12-6.9-1.1-.1z"/>
+                <path fill="#EA4335" d="M17.1 8.2l1.1-.1L6.2 1.2c-.5-.3-1 0-1.4.3l12.3 6.7z"/>
+                <path fill="#34A853" d="M17.1 8.2l3.7 2.1c1.1.6 1.1 1.6 0 2.2l-3.7 2.1-2.3-3.2 2.3-3.2z"/>
+              </svg>
+              <div class="playstore-copy">
+                <small>GET IT ON</small>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+
+            <!-- Official Product Page Button -->
+            <a href="https://www.javedkhanlabs.in/products/pennybook/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <span>🌐 Official Product Website</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Showcase Image -->
+        <div class="promo-visual">
+          <img src="pennybook_preview.png" alt="pennyBook Ledger Android App Showcase" class="promo-preview-img">
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">◈ JAVED KHAN LABS</div>
+      <div class="footer-links">
+        <a href="https://github.com/javedakhan2010/pikachuASCII" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a href="https://www.javedkhanlabs.in/products/pennybook/" target="_blank" rel="noopener noreferrer">pennyBook Ledger</a>
+        <a href="https://play.google.com/store/apps/details?id=com.pennybook.expensetracker" target="_blank" rel="noopener noreferrer">Google Play Store</a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Javed Khan Labs. All rights reserved. Pokémon and Pikachu are trademarks of Nintendo / Creatures Inc. / GAME FREAK inc.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const video = document.getElementById('pikachu-video');
+    const unmuteBtn = document.getElementById('btn-unmute');
+    const unmuteText = document.getElementById('unmute-text');
+    const badgeIcon = document.getElementById('badge-icon');
+    const badgeText = document.getElementById('badge-text');
+
+    function toggleAudio() {
+      if (video.muted) {
+        video.muted = false;
+        video.play();
+        unmuteText.textContent = 'Mute Audio';
+        badgeIcon.textContent = '🔊';
+        badgeText.textContent = 'Audio Active';
+      } else {
+        video.muted = true;
+        unmuteText.textContent = 'Unmute Master Audio';
+        badgeIcon.textContent = '🔇';
+        badgeText.textContent = 'Tap to Unmute';
+      }
+    }
+  </script>
 </body>
 </html>
