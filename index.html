@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cinematic 3D ASCII Pikachu emergence from Pokéball with electric discharge and live telemetry by Javed Khan Labs.">
+  <title>Pikachu Cinematic Emergence | ASCII Lab · Javed Khan Labs</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <main class="shell">
+    <article class="scene scene--source">
+      <img src="preview.webp" width="540" height="960" alt="Cinematic 3D ASCII Pikachu emerging from Pokéball with electric arcs by Javed Khan Labs">
+      <div class="scene-copy">
+        <span class="number">04</span>
+        <h1>Pikachu (Cinematic Emergence)</h1>
+        <p>A photorealistic 3D cinematic transformation of Pikachu emerging from its Pokéball. Features dramatic red-core lighting, crackling 240,000V electric arcs, saturated Poké-yellow volumetric shading, anamorphic optical streaks, synchronized master audio, and real-time Javed Khan Labs telemetry.</p>
+        <div class="scene-cards">
+          <div class="scene-card">
+            <span class="scene-card-header"><span class="filename">cinematic.py</span><strong>Neural ASCII Shader Pipeline</strong></span>
+            <pre><code># Cinematic 3D Pikachu ASCII Lab Neural Shader Pipeline
+frame_src    = decode_stream(frame_idx);  crop = center_crop(1080, 1496)
+lum_field    = rgb_to_luminance(frame_src);  sobel = gradient_tensor(lum_field)
+ascii_grid   = map_ascii_density(lum_field, RAMP='  ..:-=+*oa#%8@$', edges=sobel)
+bloom_pass   = optical_glow(near=0.45, far=0.35, anamorphic_streak=70)  # 240kV
+composite    = render_atlas(ascii_grid, font='Consolas 22pt')  # Javed Khan Labs</code></pre>
+          </div>
+          <div class="scene-card">
+            <span class="scene-card-header"><span>Watermark &amp; Branding</span><strong>Javed Khan Labs Signature</strong></span>
+            <pre><code>+------------------------------------+
+|         JAVED KHAN LABS            |
+|   04 : PIKACHU CINEMATIC LAB       |
++------------------------------------+</code></pre>
+          </div>
+        </div>
+        <nav class="actions" aria-label="Scene links">
+          <a href="README.md">How to run</a>
+          <a href="scene.mp4">Watch master MP4 with audio</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
